@@ -9,7 +9,7 @@
 set -u
 SCRIPT="$0"
 SCRIPT_DIR=$(dirname $(realpath "$SCRIPT"))
-SETENV_SCRIPT_PATH="$SCRIPT_DIR/marte2-sigtools-setenv.sh"
+SETENV_SCRIPT_PATH="$SCRIPT_DIR/setenv.sh"
 
 if [ -f "$SETENV_SCRIPT_PATH" ]
 then
@@ -20,7 +20,7 @@ else
 fi
 
 # Import common shell functions
-source "${SCRIPT_DIR}/marte2-sigtools-utils.sh"
+source "${SCRIPT_DIR}/utils.sh"
 
 #cd ${MARTe2_PROJECT_ROOT}/MARTe2-dev && git checkout 99c7d76af4 && make -f Makefile.linux
 #cd ${MARTe2_PROJECT_ROOT}/MARTe2-components && git checkout 00a08ac && make -f Makefile.linux

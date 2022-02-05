@@ -7,7 +7,7 @@
 set -u
 SCRIPT="$0"
 SCRIPT_DIR=$(dirname $(realpath "$SCRIPT"))
-SETENV_SCRIPT_PATH="$SCRIPT_DIR/marte2-sigtools-setenv.sh"
+SETENV_SCRIPT_PATH="$SCRIPT_DIR/setenv.sh"
 
 if [ -f "$SETENV_SCRIPT_PATH" ]
 then
