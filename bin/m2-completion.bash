@@ -29,3 +29,4 @@ _configs()
 
 complete -F _configs m2
 complete -F _configs m2less
+complete -F _configs m2check
