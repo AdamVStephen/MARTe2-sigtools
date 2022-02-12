@@ -19,8 +19,6 @@ Unless required by applicable law or agreed to in writing, software distributed 
 The intent is to keep these examples as compatible as possible with recent versions of the MARTe2 and MARTe2-components
 repositories, and usable with a range of Linux distributions.  For details see doc/compatibility.md
 
-
-
 ## MARTe2 References
 
 The MARTe software framework is a C++ modular and multi-platform framework for the development of real-time control system applications. 
