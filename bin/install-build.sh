@@ -57,7 +57,7 @@ export DEFAULT_DEMOS_SHA="develop"
 
 declare -A demos_branch=( 
 	["centos7"]="ayr"  
-	"ubuntu18.04"]="ayr" 
+	["ubuntu18.04"]="ayr" 
 	["ubuntu20.04"]="ayr" 
 	["debian11"]="ayr" 
 	)
