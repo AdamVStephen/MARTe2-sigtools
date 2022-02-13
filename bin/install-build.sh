@@ -40,16 +40,16 @@ export DEFAULT_CORE_SHA="develop"
 declare -A core_branch=( 
 	["centos7"]="99c7d76af4" 
 	["debian11"]="" 
-	["ubuntu1804"]="" 
-	["ubuntu2004"]="" 
+	["ubuntu18.04"]="" 
+	["ubuntu20.04"]="" 
 )
 
 export DEFAULT_COMPONENTS_SHA="develop"
 
 declare -A components_branch=( 
 	["centos7"]="00a08ac"  
-	["ubuntu1804"]="" 
-	["ubuntu2004"]="" 
+	["ubuntu18.04"]="" 
+	["ubuntu20.04"]="" 
 	["debian11"]="" 
 )
 
@@ -57,8 +57,8 @@ export DEFAULT_DEMOS_SHA="develop"
 
 declare -A demos_branch=( 
 	["centos7"]="ayr"  
-	["ubuntu1804"]="ayr" 
-	["ubuntu2004"]="ayr" 
+	"ubuntu18.04"]="ayr" 
+	["ubuntu20.04"]="ayr" 
 	["debian11"]="ayr" 
 	)
 
