@@ -38,7 +38,8 @@ source "${SCRIPT_DIR}/utils.sh"
 export DEFAULT_CORE_SHA="develop"
 
 declare -A core_branch=( 
-	["centos7"]="99c7d76af4" 
+	["centos7_was"]="99c7d76af4" 
+	["centos7"]="" 
 	["debian11"]="" 
 	["ubuntu18.04"]="" 
 	["ubuntu20.04"]="" 
@@ -47,7 +48,8 @@ declare -A core_branch=(
 export DEFAULT_COMPONENTS_SHA="develop"
 
 declare -A components_branch=( 
-	["centos7"]="00a08ac"  
+	["centos7_was"]="00a08ac"  
+	["centos7"]=""  
 	["ubuntu18.04"]="" 
 	["ubuntu20.04"]="" 
 	["debian11"]="" 
