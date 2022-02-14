@@ -78,7 +78,7 @@ install_prereq(){
       echo "Installing dependencies for supported distro : $this_distro"
       install_prereq_debian11
     ;;
-    debian|ubuntu18.04)
+    debian|ubuntu18.04|ubuntu20.04)
       echo "Installing dependencies for unsupported distro : $this_distro using debian11"
       install_prereq_debian11
     ;;
