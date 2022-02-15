@@ -9,9 +9,9 @@
 # TODO: use the following to avoid any absolute path reference assumptions : install wherever cloned to.
 #set -x
 
-if [ -f "$HOME/.MARTe2-sigtools.rc ]
+if [ -f "$HOME/.MARTe2-sigtools.rc" ]
 then
-	source "$HOME/.MARTe2-sigtools.rc
+	source "$HOME/.MARTe2-sigtools.rc"
 else
 export SCRIPT="${BASH_SOURCE[${#BASH_SOURCE[@]} - 1]}"
 export SCRIPT_REALPATH=$(realpath "$SCRIPT")
