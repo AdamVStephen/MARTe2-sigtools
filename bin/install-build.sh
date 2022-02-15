@@ -21,10 +21,13 @@ else
 fi
 
 # For post-installation environment setup, define INSTALLATION_DIR 
+# exceptionally we need to refer to an unbound variable
+set +u
 echo "export INSTALLATION_DIR="${INSTALLATION_DIR}" >> "${HOME}/.MARTe2-sigtools.rc
+set -u
 
 # WIP
-exit 92
+exit 0
 
 # Placate shell-check and ensure env is as expected.
 export MARTe2_PROJECT_ROOT=${MARTe2_PROJECT_ROOT:-/fatalerror}
