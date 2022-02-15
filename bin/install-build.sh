@@ -20,6 +20,12 @@ else
   exit 54
 fi
 
+# For post-installation environment setup, define INSTALLATION_DIR 
+echo "export INSTALLATION_DIR="${INSTALLATION_DIR}" >> "${HOME}/.MARTe2-sigtools.rc
+
+# WIP
+exit 92
+
 # Placate shell-check and ensure env is as expected.
 export MARTe2_PROJECT_ROOT=${MARTe2_PROJECT_ROOT:-/fatalerror}
 if [ ! -d "${MARTe2_PROJECT_ROOT}" ]

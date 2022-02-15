@@ -2,16 +2,22 @@
 #
 # Set environment variables for the project.  Referenced from other install and run scripts.
 #
+# 2022-02-15 Still too fragile.  See e.g. http://mywiki.wooledge.org/BashFAQ/028
 # 2022-01-22 passes shellcheck linting OK.
 # 2022-01-22 : bashtip : surround shell expansion strings in double quotes : shellcheck
 # 2022-01-22 : bashtip : use || exit after a cd attempt in case the directory is not found : shellcheck
 # TODO: use the following to avoid any absolute path reference assumptions : install wherever cloned to.
 #set -x
 
+if [ -f "$HOME/.MARTe2-sigtools.rc ]
+then
+	source "$HOME/.MARTe2-sigtools.rc
+else
 export SCRIPT="${BASH_SOURCE[${#BASH_SOURCE[@]} - 1]}"
 export SCRIPT_REALPATH=$(realpath "$SCRIPT")
 export SCRIPT_NAME=$(basename "$SCRIPT_REALPATH")
 export SCRIPT_DIR=$(dirname "$SCRIPT_REALPATH")
+fi
 
 export PATH=$PATH:${SCRIPT_DIR}
 export INSTALLATION_DIR=$(realpath "$SCRIPT_DIR/../../")
