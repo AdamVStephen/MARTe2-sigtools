@@ -49,5 +49,5 @@ export MARTe2_CONFIG_PATH=${MARTe2_Demos_Sigtools_DIR}/Configurations
 
 # EPICS Environment : tune per machine
 # Broadcast address of the specifc network
-export EPICS_CA_ADDR_LIST=10.208.19.255
+export EPICS_CA_ADDR_LIST=127.0.0.255
 export EPICS_CA_AUTO_ADDR_LIST=NO
