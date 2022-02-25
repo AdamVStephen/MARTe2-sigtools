@@ -30,3 +30,19 @@ _configs()
 complete -F _configs m2
 complete -F _configs m2less
 complete -F _configs m2check
+
+
+_dbs()
+{
+	local cfgs cur
+	cfgs=$(ls -1 ${MARTe2_CONFIG_PATH}/*.db | while read f; do echo $(basename $f); done)
+	cur=${COMP_WORDS[COMP_CWORD]}
+	COMPREPLY=( $(compgen -W "$cfgs" -- ${cur}) )
+	return 0
+}
+#} && complete -o nospace -F _configs m2} && complete -o nospace -F _configs m2
+
+complete -F _dbs m2ioc
+
+
+
