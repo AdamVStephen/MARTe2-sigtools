@@ -48,7 +48,7 @@ export EPICS_IOC_DB=${CFG_DIR}/EPICSv3-demo.db
 echo "Start ancillary softIoc using default database $CONFIG"
 # softIoc may not run in nohup, so use tmux
 # tmux constraints on session names requires limited character set.
-cfgtag=$(tr -cd '[:alnum:]' $(basename $CONFIG))
+cfgtag=$(echo $(basename $CONFIG) | tr -cd '[:alnum:]' )
 # TODO bash strings strip the .cfg
 #cfgtag=
 tmux -L MARTe2-sigtools new-session -d -s soft-ioc-$cfgtag "softIoc -d $CONFIG"
