@@ -57,13 +57,6 @@ else
     shift
 fi
 
-#echo "Running in ${WD} : ./Main.sh -l RealTimeLoader -f "${CONFIG}" -s ${INITIAL_STATE}"
-#cd ${WD} && ./Main.sh -l RealTimeLoader -f "${CONFIG}" -s ${INITIAL_STATE}
-
-export EPICS_IOC_DB=${CFG_DIR}/EPICSv3-demo.db
-echo "Start ancillary softIoc using default database $EPICS_IOC_DB"
-nohup softIoc -d "$EPICS_IOC_DB" > /var/tmp/softIoc.$BASHPID.stdout 2> /var/tmp/softIoc.$BASHPID.stderr & 
-
 echo Running in ${WD} : ./Main.sh -l RealTimeLoader -f "${CONFIG}" "${GOFLAG}" "${GOARG}"
 #cd ${WD} && ./Main.sh -l RealTimeLoader -f "${CONFIG}" -s ${INITIAL_STATE}
 cd ${WD} && ./Main.sh -l RealTimeLoader -f "${CONFIG}" "${GOFLAG}" "${GOARG}"
