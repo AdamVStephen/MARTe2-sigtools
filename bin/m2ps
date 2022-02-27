@@ -71,4 +71,4 @@ m2_processes
 echo "MARTe2 processes running on $(hostname)"
 epics_processes
 echo "tmux -L MARTe2-sigtools sessions on $(hostname)"
-tmux_processes
+tmux_sessions
