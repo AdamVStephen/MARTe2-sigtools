@@ -3,6 +3,8 @@
 # Install package dependencies.  Only necessary on a machine not previously configured for MARTe2
 #
 # Guard against unset variable expansion
+#
+# TODO: tidy up use of debian11 function for debian12 if it works.
 set -u
 SCRIPT="$0"
 SCRIPT_DIR=$(dirname $(realpath "$SCRIPT"))
@@ -69,6 +71,10 @@ install_prereq(){
       install_prereq_centos7
     ;;
     debian11)
+      echo "Installing dependencies for supported distro : $this_distro"
+      install_prereq_debian11
+    ;;
+    debian12)
       echo "Installing dependencies for supported distro : $this_distro"
       install_prereq_debian11
     ;;
