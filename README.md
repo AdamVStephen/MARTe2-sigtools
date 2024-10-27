@@ -30,3 +30,10 @@ The MARTe software framework is a C++ modular and multi-platform framework for t
 - [Source-code](https://vcis-gitlab.f4e.europa.eu/aneto/MARTe2)
 - [Integration](https://vcis-jenkins.f4e.europa.eu/job/MARTe2)
 
+# Branches, Tags, Releases
+
+This repository is maintained in alignment with [docker support](https://github.com/AdamVStephen/my-dockers/MARTe2-sigtools).
+
+The naming convention is to take identifiers from a sequential list provided in 'codenames.txt'.  While in development, the current identifier names the branch.  Once a feature set is stable and ready for use with the corresponding container, the commit is tagged with the same identifier and the branch is deleted.
+
+
