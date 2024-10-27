@@ -4,7 +4,7 @@ airdrie : DEPRECATED : working with 0004-1 example
 arbroath : STABLE 2022-02-06 : supports centos7, ubuntu1804, debian11
 ayr : 2022
 barrhead : 2022
-blantyre : 2024-10-26
+blantyre : 2024-10-26 updating for compatibility with latest containers
 bonnyrigg
 clydebank
 dumbarton
